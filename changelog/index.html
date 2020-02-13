@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="en" class="has-spaced-navbar-fixed-top">
+<head>
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.18.2-SNAPSHOT"/>
+<link rel="icon" href="https://strikt.io/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Changelog</title>
+
+
+<meta name="description" content="Strikt is an assertion library for Kotlin intended for use with a test runner such as JUnit or Spek.">
+
+
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.18.2-SNAPSHOT","baseUrl":"https://strikt.io","environment":"prod","version":"0.23.7"};
+</script>
+
+
+
+
+    <!-- start:inject components -->
+    
+        
+            
+        
+            
+        
+    
+    <!-- end:inject components -->
+
+
+
+    <!-- start:inject components -->
+    
+    <!-- end:inject components -->
+
+
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://strikt.io/StriktTheme/73a8504e/assets/css/bulma.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://strikt.io/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="https://strikt.io/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="https://strikt.io/ajax/libs/prism/1.17.1/themes/prism-tomorrow.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://strikt.io/assets/css/bulma-accordion.min.css"  />
+<!-- end:inject styles -->
+<script
+  defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+  integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+  crossorigin="anonymous"></script>
+
+<style>
+  /* Fix some conflicts with Prism and Bulma */
+  pre[class*="language-"] {
+    margin: inherit;
+  }
+
+  code[class*="language-"], pre[class*="language-"],
+  code, pre {
+    font-family: 'Fira Code', 'Source Code Pro', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  :not(pre) > code[class*="language-"], pre[class*="language-"],
+  pre {
+    background: #363636;
+    color: #ccc;
+  }
+
+  pre[class*="language-"] .number {
+    align-items: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+    display: inherit;
+    font-size: inherit;
+    height: inherit;
+    justify-content: inherit;
+    margin-right: inherit;
+    min-width: inherit;
+    padding: inherit;
+    text-align: inherit;
+    vertical-align: inherit;
+  }
+
+  pre.notification {
+    padding: 1em;
+  }
+</style>
+
+</head>
+<body>
+<nav class="navbar is-spaced is-fixed-top is-black" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://strikt.io">
+        <img src="https://strikt.io/assets/images/logo-white-28.png" alt="Strikt">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <form id="search-input" data-orchid-search>
+  <div class="field has-addons">
+    <div class="control text-control">
+      <input class="input" type="text" name="query" placeholder="Search Strikt docs...">
+
+      <div id="search-progress" data-orchid-search-progress style="display: none;">
+        <div class="loader">Loading...</div>
+      </div>
+    </div>
+    <div class="control">
+      <input type="submit" class="button is-info" value="Search">
+    </div>
+  </div>
+</form>
+<div id="search-results" data-orchid-search-results style="display: none;">
+  <div class="carat"></div>
+  <b>
+    Search Results
+    <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+  </b>
+  <ul></ul>
+</div>
+
+      </div>
+      <div class="navbar-end">
+
+      
+      
+        <a class="navbar-item" href="https://strikt.io">
+          <span class="icon has-text-info"><i class="fas fa-home"></i></span>
+          <span>Home</span>
+        </a>
+      
+      
+      
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <span class="icon has-text-info"><i class="fas fa-graduation-cap"></i></span>
+            <span>User Guide</span>
+          </a>
+          <div class="navbar-dropdown is-right">
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/getting-started">Getting Started</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/assertion-styles">Assertion Styles</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/collection-elements">Collection Element Assertions</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/expecting-exceptions">Expecting Exceptions</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/flow-typing">Strongly Typed Assertions</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/traversing-subjects">Traversing Assertion Subjects</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/grouping-with-and">Grouping Assertions With and</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/custom-assertions">Custom Assertions</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/wiki/additional-modules">Additional Modules</a>
+            
+          
+          </div>
+        </div>
+      
+      
+      
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <span class="icon has-text-info"><i class="fas fa-book"></i></span>
+            <span>API</span>
+          </a>
+          <div class="navbar-dropdown is-right">
+          
+            
+              <a class="navbar-item" href="https://strikt.io/modules/core">Core API</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/modules/bom">Bill of Materials</a>
+            
+          
+            
+              <hr class="navbar-divider">
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/modules/arrow">Arrow Module</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/modules/gradle">Gradle Module</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/modules/jackson">Jackson Module</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/modules/java">Java Module</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/modules/protobuf">Protobuf Module</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/modules/spring">Spring Module</a>
+            
+          
+          </div>
+        </div>
+      
+      
+      
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <span class="icon has-text-info"><i class="fas fa-info-circle"></i></span>
+            <span>Information</span>
+          </a>
+          <div class="navbar-dropdown is-right">
+          
+            
+              <a class="navbar-item" href="https://strikt.io/about">About Strikt</a>
+            
+          
+            
+              <a class="navbar-item" href="https://strikt.io/changelog">Changelog</a>
+            
+          
+          </div>
+        </div>
+      
+      
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-10-desktop">
+      
+        
+
+        <div class="content is-medium">
+        
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="component component-changelog component-order-0">
+                            
+
+
+<section class="accordions">
+
+  <article class="accordion is-active">
+    <div class="accordion-header toggle">
+      <p>0.23.7 (latest)</p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="celestial-depths"><a href="#celestial-depths" id="celestial-depths" class="anchor"></a>Celestial Depths</h2>
+<ul>
+<li>Fixes filepeek support on Windows</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.23.6 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="weeping-spire"><a href="#weeping-spire" id="weeping-spire" class="anchor"></a>Weeping Spire</h2>
+<ul>
+<li>Fixes missing transitive dependency on <code>com.christophsturm:filepeek</code></li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.23.5 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="auspicious-misery"><a href="#auspicious-misery" id="auspicious-misery" class="anchor"></a>Auspicious Misery</h2>
+<ul>
+<li>Fixes some errors in complex nested block scenarios. See <a href="https://github.com/robfletcher/strikt/issues/203">#203</a> and <a href="https://github.com/robfletcher/strikt/issues/204">#204</a></li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.23.4 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="grievous-form"><a href="#grievous-form" id="grievous-form" class="anchor"></a>Grievous Form</h2>
+<ul>
+<li>Fixes BOM file from previous release</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.23.3 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="savage-wing"><a href="#savage-wing" id="savage-wing" class="anchor"></a>Savage Wing</h2>
+<ul>
+<li>Improved descriptions associated with Jackson extensions. See <a href="https://github.com/robfletcher/strikt/issues/195">#195</a></li>
+<li>Added <code>at</code> mapping for <code>JsonNode</code> assertions. See <a href="https://github.com/robfletcher/strikt/issues/152">#152</a></li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.23.2 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="mighty-empress"><a href="#mighty-empress" id="mighty-empress" class="anchor"></a>Mighty Empress</h2>
+<ul>
+<li>Fixes <code>IllegalArgumentException</code> on <code>compose</code> when prior assertions have failed because the subject is the wrong type. See <a href="https://github.com/robfletcher/strikt/issues/194">#194</a></li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.23.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="rancorous-horizon"><a href="#rancorous-horizon" id="rancorous-horizon" class="anchor"></a>Rancorous Horizon</h2>
+<ul>
+<li>Adds <code>with</code> function for performing blocks of assertions on a derived subject. See <a href="https://github.com/robfletcher/strikt/issues/117">#117</a></li>
+<li>Many assertion functions may now be used in infix style. See <a href="https://github.com/robfletcher/strikt/pull/187">#187</a></li>
+<li>Improves presentation of multi-line values in expectation output. See <a href="https://github.com/robfletcher/strikt/issues/158">#158</a></li>
+</ul>
+<h3 id="breaking-changes"><a href="#breaking-changes" id="breaking-changes" class="anchor"></a>Breaking changes</h3>
+<ul>
+<li>The <code>expectThat</code> override that accepts a lambda is now <code>Unit</code> rather than returning <code>Assertion.Builder</code>. See <a href="https://github.com/robfletcher/strikt/issues/190">#190</a></li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.22.3 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="vermillion-warrior"><a href="#vermillion-warrior" id="vermillion-warrior" class="anchor"></a>Vermillion Warrior</h2>
+<ul>
+<li>Adds assertions for sequence of values being present in a list</li>
+<li>Fixes to documentation in Arrow module</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.22.2 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="flawless-assassin"><a href="#flawless-assassin" id="flawless-assassin" class="anchor"></a>Flawless Assassin</h2>
+<ul>
+<li>Fixes transitive dependency on opentest4j for consumers</li>
+<li>Updates Arrow dependency</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.22.1 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="blessed-hammer"><a href="#blessed-hammer" id="blessed-hammer" class="anchor"></a>Blessed Hammer</h2>
+<ul>
+<li>Fixes documentation link that broke previous release</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.22.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="rancourous-dirge"><a href="#rancourous-dirge" id="rancourous-dirge" class="anchor"></a>Rancourous Dirge</h2>
+<ul>
+<li>New module for assertions on Arrow's <code>Either</code>, <code>Try</code> and <code>Option</code> types.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.21.2 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="funereal-daughter"><a href="#funereal-daughter" id="funereal-daughter" class="anchor"></a>Funereal Daughter</h2>
+<ul>
+<li>Fixes issues with <code>and</code> (see #176)</li>
+<li>Kotlin 1.3.50</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.21.1 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="heavenly-bear"><a href="#heavenly-bear" id="heavenly-bear" class="anchor"></a>Heavenly Bear</h2>
+<ul>
+<li>Bug-fix for type inference in <code>succeeded()</code>.</li>
+<li>Improved output for <code>failed()</code>.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.21.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="funereal-raven"><a href="#funereal-raven" id="funereal-raven" class="anchor"></a>Funereal Raven</h2>
+<h3 id="breaking-changes"><a href="#breaking-changes" id="breaking-changes" class="anchor"></a>Breaking changes</h3>
+<ul>
+<li>Updated exception handling assertions that use Kotlin's <code>runCatching</code> and <code>Result&lt;T&gt;</code>.</li>
+</ul>
+<h3 id="other-changes"><a href="#other-changes" id="other-changes" class="anchor"></a>Other changes</h3>
+<ul>
+<li>Added override for <code>describedAs</code> that accepts a lambda.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.20.1 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="elder-refuge"><a href="#elder-refuge" id="elder-refuge" class="anchor"></a>Elder Refuge</h2>
+<ul>
+<li>Changed <code>Assertion.Builder&lt;Iterable&lt;*&gt;&gt;.contains</code> to pass if the argument is an empty list/varargs.</li>
+<li>Fixed an out of bounds exception in <code>Assertion.Builder&lt;Iterable&lt;*&gt;&gt;.containsExactly</code></li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.20.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="pain-mother"><a href="#pain-mother" id="pain-mother" class="anchor"></a>Pain Mother</h2>
+<p>Added <code>strikt.gradle</code> module with some support for testing Gradle's API.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.19.7 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="glorious-catacomb"><a href="#glorious-catacomb" id="glorious-catacomb" class="anchor"></a>Glorious Catacomb</h2>
+<ul>
+<li>Adds assertions and mappings for <code>java.io.File</code> and <code>java.nio.file.Path</code></li>
+<li>Adds assertions for Spring's <code>ResponseEntity</code> class.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.19.6 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="bitter-forest"><a href="#bitter-forest" id="bitter-forest" class="anchor"></a>Bitter Forest</h2>
+<p>Fixes issues with bom publication.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.19.5 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="victorious-scholar"><a href="#victorious-scholar" id="victorious-scholar" class="anchor"></a>Victorious Scholar</h2>
+<p>Packages a BOM for aligning strikt versions.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.19.4 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="poison-spire"><a href="#poison-spire" id="poison-spire" class="anchor"></a>Poison Spire</h2>
+<p>Suppresses internal stack frames from exceptions to make it easier to determine where the assertion was raised.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.19.3 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="iron-ocean"><a href="#iron-ocean" id="iron-ocean" class="anchor"></a>Iron Ocean</h2>
+<ul>
+<li>Adds assertions and mappings for <code>Assertion.Builder&lt;ClosedRange&gt;</code>.</li>
+<li>Adds <code>endsWith(Char)</code> for <code>Assertion.Builder&lt;CharSequence&gt;</code>.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.19.2 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="bounteous-steel"><a href="#bounteous-steel" id="bounteous-steel" class="anchor"></a>Bounteous Steel</h2>
+<ul>
+<li>Adds <code>getValue</code> assertion/mapping for <code>Assertion.Builder&lt;Map&lt;*, *&gt;&gt;</code>.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.19.1 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="mighty-rainbow"><a href="#mighty-rainbow" id="mighty-rainbow" class="anchor"></a>Mighty Rainbow</h2>
+<ul>
+<li>Adds overload of <code>not</code> that accepts a block.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.19.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="poison-hammer"><a href="#poison-hammer" id="poison-hammer" class="anchor"></a>Poison Hammer</h2>
+<ul>
+<li>Ensures that chains inside of blocks still fail fast.</li>
+<li>Ensures <code>get</code> is runtime type safe. It's now a no-op when preceded by a failing type-narrowing assertion.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.18.2 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="venomous-twilight"><a href="#venomous-twilight" id="venomous-twilight" class="anchor"></a>Venomous Twilight</h2>
+<p>Added <code>atLeat</code>, <code>atMost</code> and <code>exactly</code> assertions for iterables.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.18.1 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="ferocious-rose"><a href="#ferocious-rose" id="ferocious-rose" class="anchor"></a>Ferocious Rose</h2>
+<p>Extends <code>strikt-jackson</code> module with further assertion and mapping functions:</p>
+<ul>
+<li><code>hasNodeType(JsonNodeType)</code></li>
+<li><code>isMissing()</code></li>
+<li><code>textValue()</code></li>
+<li><code>numberValue()</code></li>
+<li><code>booleanValue()</code></li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.18.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="silken-grasshopper"><a href="#silken-grasshopper" id="silken-grasshopper" class="anchor"></a>Silken Grasshopper</h2>
+<p>Adds <code>strikt-jackson</code> module.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.17.3 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="unfettered-serpent"><a href="#unfettered-serpent" id="unfettered-serpent" class="anchor"></a>Unfettered Serpent</h2>
+<p>Adds <code>isPresent</code> and <code>isAbsent</code> assertions for <code>java.util.Optional</code> along with <code>toNullable</code> mapping function.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.17.2 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="battleworn-understanding"><a href="#battleworn-understanding" id="battleworn-understanding" class="anchor"></a>Battleworn Understanding</h2>
+<p>Fixes <code>isSorted</code> when used in a block.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.17.1 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="whispering-sword"><a href="#whispering-sword" id="whispering-sword" class="anchor"></a>Whispering Sword</h2>
+<p>Adds <code>filter</code>, <code>filterNot</code> and <code>filterIsInstance</code> functions for <code>Assertion.Builder&lt;Iterable&lt;*&gt;&gt;</code></p>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.17.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="forsaken-raven"><a href="#forsaken-raven" id="forsaken-raven" class="anchor"></a>Forsaken Raven</h2>
+<h3 id="changes"><a href="#changes" id="changes" class="anchor"></a>Changes</h3>
+<ul>
+<li>Upgrades Strikt to depend on Kotlin 1.3.</li>
+<li><code>expectThrows</code> is un-deprecated.</li>
+</ul>
+<h3 id="new-functionality"><a href="#new-functionality" id="new-functionality" class="anchor"></a>New functionality</h3>
+<ul>
+<li>Expectations are now compatible with suspending lambdas.</li>
+</ul>
+<h3 id="fixes"><a href="#fixes" id="fixes" class="anchor"></a>Fixes</h3>
+<ul>
+<li><code>isBefore</code> and <code>isAfter</code> in <code>strikt-java-time</code> now support <code>ZonedDateTime</code>.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.16.3 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="saffron-mammoth"><a href="#saffron-mammoth" id="saffron-mammoth" class="anchor"></a>Saffron Mammoth</h2>
+<h3 id="new-functionality"><a href="#new-functionality" id="new-functionality" class="anchor"></a>New functionality</h3>
+<ul>
+<li><code>Assertion.Builder&lt;Collection&lt;*&gt;.isSorted</code></li>
+<li><code>isEqualTo</code> now has special handling for arrays that compares content using <code>contentEquals</code>.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.16.2 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="anonymous-ifrit"><a href="#anonymous-ifrit" id="anonymous-ifrit" class="anchor"></a>Anonymous Ifrit</h2>
+<ul>
+<li>Backed out truncation of values in failure messages.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.16.1 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="onyx-mammoth"><a href="#onyx-mammoth" id="onyx-mammoth" class="anchor"></a>Onyx Mammoth</h2>
+<ul>
+<li>Backed out truncation of values in failure messages.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.16.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="sadness-blossom"><a href="#sadness-blossom" id="sadness-blossom" class="anchor"></a>Sadness Blossom</h2>
+<h3 id="breaking-changes"><a href="#breaking-changes" id="breaking-changes" class="anchor"></a>Breaking changes</h3>
+<ul>
+<li>Assertions for <code>java.time</code> types moved from <code>strikt-core</code> to new <code>strikt-java-time</code> module.</li>
+</ul>
+<h3 id="new-functionality"><a href="#new-functionality" id="new-functionality" class="anchor"></a>New functionality</h3>
+<ul>
+<li><code>Assertion.Builder&lt;Map&lt;*, *&gt;&gt;.isNotEmpty</code></li>
+<li><code>Assertion.Builder&lt;Array&lt;*&gt;&gt;.toList</code></li>
+<li><code>Assertion.Builder&lt;CharSequence&gt;.trim</code></li>
+<li><code>Assertion.Builder&lt;String&gt;.trim</code></li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.15.2 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="alabaster-tyrant"><a href="#alabaster-tyrant" id="alabaster-tyrant" class="anchor"></a>Alabaster Tyrant</h2>
+<ul>
+<li>Added <code>is(Not)(NullOr)(Empty|Blank)</code> assertions.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.15.1 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="wasteland-monkey"><a href="#wasteland-monkey" id="wasteland-monkey" class="anchor"></a>Wasteland Monkey</h2>
+<ul>
+<li>Changes <code>get</code> to use a receiver rather than a parameter.</li>
+<li>Adds new <code>first(predicate)</code> and <code>flatMap</code> mapping extensions for iterable subjects.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.15.0 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="garden-daimyo"><a href="#garden-daimyo" id="garden-daimyo" class="anchor"></a>Garden Daimyo</h2>
+<ul>
+<li>Deprecates <code>chain</code> in favor of new <code>get</code> method.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.14.4 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="void-maiden"><a href="#void-maiden" id="void-maiden" class="anchor"></a>Void Maiden</h2>
+<ul>
+<li>Added Java 11 build &amp; hopefully fixed site publishing</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+  <article class="accordion ">
+    <div class="accordion-header toggle">
+      <p>0.14.3 </p>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-content">
+      <h2 id="hungry-boulder"><a href="#hungry-boulder" id="hungry-boulder" class="anchor"></a>Hungry Boulder</h2>
+<ul>
+<li>Added <code>isIn</code> assertion.</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+
+</section>
+
+                        </div>
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+        </div>
+      
+      
+
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <p class="has-text-left-tablet has-text-centered-mobile">
+        
+          <a href="https://github.com/robfletcher/strikt/" class="button is-dark">
+            <span class="icon"><i class="fab fa-lg fa-github"></i></span>
+            <span>GitHub</span>
+          </a>
+        
+          <a href="https://kotlinlang.slack.com/messages/CAR7KJ96J" class="button is-danger">
+            <span class="icon"><i class="fab fa-lg fa-slack-hash"></i></span>
+            <span>Slack</span>
+          </a>
+        
+          <a href="https://twitter.com/stri_kt" class="button is-info">
+            <span class="icon"><i class="fab fa-lg fa-twitter"></i></span>
+            <span>Twitter</span>
+          </a>
+        
+        </p>
+      </div>
+      <div class="column">
+        <p class="has-text-right-tablet has-text-centered-mobile">
+          <a href="https://bulma.io/">
+            <img
+              src="https://strikt.io/assets/images/made-with-bulma--semiblack.png"
+              alt="Bulma"
+              width="171"
+              height="32">
+          </a>
+          <a href="https://orchid.run/">
+            <img
+              src="https://strikt.io/assets/svg/orchid/logo_top_light.svg"
+              alt="Orchid 0.18.2-SNAPSHOT"
+              width="64"
+              height="32">
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- start:inject scripts -->
+<script  src="https://strikt.io/StriktTheme/73a8504e/assets/js/init.js"></script>
+<script  src="https://strikt.io/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script  src="https://strikt.io/lunr/lunr.js"></script>
+<script  src="https://strikt.io/assets/js/orchidSearch.js"></script>
+<script  src="https://strikt.io/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://strikt.io/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://strikt.io/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://strikt.io/assets/js/bulma-accordion.min.js"></script>
+<script >
+bulmaAccordion.attach();
+</script>
+<!-- end:inject scripts -->
+</body>
+</html>

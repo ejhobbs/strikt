@@ -1,0 +1,498 @@
+{
+  "ownKey": "kotlindoc",
+  "childrenPages": {
+    "kotlindoc": {
+      "ownKey": "kotlindoc",
+      "childrenPages": {
+        "gradle": {
+          "ownKey": "gradle",
+          "childrenPages": {"strikt": {
+            "ownKey": "strikt",
+            "childrenPages": {"gradle": {
+              "ownKey": "gradle",
+              "childrenPages": {"testkit": {
+                "ownKey": "testkit",
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc/gradle",
+                    "baseUrl": "https://strikt.io",
+                    "fileName": "strikt/gradle/testkit",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://strikt.io/kotlindoc/gradle/strikt/gradle/testkit"
+                  },
+                  "description": "",
+                  "title": "strikt.gradle.testkit",
+                  "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+                }]
+              }}
+            }}
+          }}
+        },
+        "spring": {
+          "ownKey": "spring",
+          "childrenPages": {"strikt": {
+            "ownKey": "strikt",
+            "childrenPages": {"spring": {
+              "ownKey": "spring",
+              "ownPages": [{
+                "reference": {
+                  "path": "kotlindoc/spring",
+                  "baseUrl": "https://strikt.io",
+                  "fileName": "strikt/spring",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://strikt.io/kotlindoc/spring/strikt/spring"
+                },
+                "description": "",
+                "title": "strikt.spring",
+                "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+              }]
+            }}
+          }}
+        },
+        "core": {
+          "ownKey": "core",
+          "childrenPages": {"strikt": {
+            "ownKey": "strikt",
+            "childrenPages": {
+              "internal": {
+                "ownKey": "internal",
+                "childrenPages": {
+                  "opentest4j": {
+                    "ownKey": "opentest4j",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/internal/opentest4j",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/internal/opentest4j"
+                      },
+                      "description": "",
+                      "title": "strikt.internal.opentest4j",
+                      "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+                    }]
+                  },
+                  "reporting": {
+                    "ownKey": "reporting",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/internal/reporting",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/internal/reporting"
+                      },
+                      "description": "",
+                      "title": "strikt.internal.reporting",
+                      "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+                    }]
+                  }
+                },
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc/core",
+                    "baseUrl": "https://strikt.io",
+                    "fileName": "strikt/internal",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://strikt.io/kotlindoc/core/strikt/internal"
+                  },
+                  "description": "",
+                  "title": "strikt.internal",
+                  "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+                }]
+              },
+              "assertions": {
+                "ownKey": "assertions",
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc/core",
+                    "baseUrl": "https://strikt.io",
+                    "fileName": "strikt/assertions",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://strikt.io/kotlindoc/core/strikt/assertions"
+                  },
+                  "description": "",
+                  "title": "strikt.assertions",
+                  "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+                }]
+              },
+              "api": {
+                "ownKey": "api",
+                "childrenPages": {
+                  "compoundassertions": {
+                    "ownKey": "compoundassertions",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/api/compoundassertions",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/api/compoundassertions"
+                      },
+                      "description": "",
+                      "title": "CompoundAssertions",
+                      "content": "<p>CommentComponent(kind=text, text=Returned by , value=) CommentComponent(kind=typeName, text=Assertion.Builder.compose, value=strikt.api.Assertion.Builder.compose) CommentComponent(kind=text, text= allowing a bridge between evaluation\nof composed assertions and the determination of the overall result in the\n<code>block<\/code> parameter passed to , value=) CommentComponent(kind=typeName, text=then, value=strikt.api.CompoundAssertions.then) CommentComponent(kind=text, text=., value=null)<\/p>\n"
+                    }]
+                  },
+                  "atomicassertion": {
+                    "ownKey": "atomicassertion",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/api/atomicassertion",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/api/atomicassertion"
+                      },
+                      "description": "",
+                      "title": "AtomicAssertion",
+                      "content": "<p>CommentComponent(kind=text, text=An assertion of a single condition on a subject., value=null)<\/p>\n"
+                    }]
+                  },
+                  "compoundassertion": {
+                    "ownKey": "compoundassertion",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/api/compoundassertion",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/api/compoundassertion"
+                      },
+                      "description": "",
+                      "title": "CompoundAssertion",
+                      "content": "<p>CommentComponent(kind=text, text=An assertion composed of multiple conditions whose overall result is\ndetermined by some aggregation of those conditions' results., value=null)<\/p>\n"
+                    }]
+                  },
+                  "describeablebuilder": {
+                    "ownKey": "describeablebuilder",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/api/describeablebuilder",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/api/describeablebuilder"
+                      },
+                      "description": "",
+                      "title": "DescribeableBuilder",
+                      "content": "<p>CommentComponent(kind=text, text=Extension of , value=) CommentComponent(kind=typeName, text=Assertion.Builder, value=strikt.api.Assertion.Builder) CommentComponent(kind=text, text= that enables the description of the\nassertion subject.<p>Since it doesn't make sense to do this anywhere except directly after the\ninitial , value=) CommentComponent(kind=typeName, text=expectThat, value=strikt.api.expectThat) CommentComponent(kind=text, text= or , value=) CommentComponent(kind=typeName, text=Assertion.Builder.with, value=strikt.api.Assertion.Builder.with) CommentComponent(kind=text, text= call those methods return an\ninstance of this interface, while assertions themselves just return\n, value=) CommentComponent(kind=typeName, text=Assertion.Builder, value=strikt.api.Assertion.Builder) CommentComponent(kind=text, text=.<\/p>, value=null)<\/p>\n"
+                    }]
+                  },
+                  "assertion": {
+                    "ownKey": "assertion",
+                    "childrenPages": {"builder": {
+                      "ownKey": "builder",
+                      "ownPages": [{
+                        "reference": {
+                          "path": "kotlindoc/core",
+                          "baseUrl": "https://strikt.io",
+                          "fileName": "strikt/api/assertion/builder",
+                          "extension": "html",
+                          "usePrettyUrl": true,
+                          "link": "https://strikt.io/kotlindoc/core/strikt/api/assertion/builder"
+                        },
+                        "description": "",
+                        "title": "Builder",
+                        "content": "<p>CommentComponent(kind=text, text=Used to construct assertions., value=null)<\/p>\n"
+                      }]
+                    }},
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/api/assertion",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/api/assertion"
+                      },
+                      "description": "",
+                      "title": "Assertion",
+                      "content": "<p>CommentComponent(kind=text, text=Allows assertion implementations to determine a result., value=null)<\/p>\n"
+                    }]
+                  },
+                  "try": {
+                    "ownKey": "try",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/api/try",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/api/try"
+                      },
+                      "description": "",
+                      "title": "Try",
+                      "content": "<p>CommentComponent(kind=text, text=Represents the outcome of an action that may return a value of type , value=) CommentComponent(kind=typeName, text=T, value=strikt.api.Try.T) CommentComponent(kind=text, text= or\nthrow an exception.<p>In the case of a successful outcome , value=) CommentComponent(kind=typeName, text=T, value=strikt.api.Try.T) CommentComponent(kind=text, text= is the declared (or inferred) return\ntype of the action. If , value=) CommentComponent(kind=typeName, text=T, value=strikt.api.Try.T) CommentComponent(kind=text, text= is Unit the action returned no value, but\ncompleted successfully. , value=) CommentComponent(kind=typeName, text=T, value=strikt.api.Try.T) CommentComponent(kind=text, text= may be a nullable type if <code>null<\/code> is a legitimate\nreturn value for the action.<\/p><p>In the case of a failed outcome , value=) CommentComponent(kind=typeName, text=T, value=strikt.api.Try.T) CommentComponent(kind=text, text= is Nothing as the action did not return\nnormally.<\/p>, value=null)<\/p>\n"
+                    }]
+                  },
+                  "expectationbuilder": {
+                    "ownKey": "expectationbuilder",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc/core",
+                        "baseUrl": "https://strikt.io",
+                        "fileName": "strikt/api/expectationbuilder",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://strikt.io/kotlindoc/core/strikt/api/expectationbuilder"
+                      },
+                      "description": "",
+                      "title": "ExpectationBuilder",
+                      "content": "<p>CommentComponent(kind=text, text=Receiver for , value=) CommentComponent(kind=typeName, text=expect, value=strikt.api.expect) CommentComponent(kind=text, text= providing functions that define assertion subjects and\ncreate assertion chains or blocks., value=null)<\/p>\n"
+                    }]
+                  }
+                },
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc/core",
+                    "baseUrl": "https://strikt.io",
+                    "fileName": "strikt/api",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://strikt.io/kotlindoc/core/strikt/api"
+                  },
+                  "description": "",
+                  "title": "strikt.api",
+                  "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+                }]
+              }
+            }
+          }}
+        },
+        "protobuf": {
+          "ownKey": "protobuf",
+          "childrenPages": {"strikt": {
+            "ownKey": "strikt",
+            "childrenPages": {"protobuf": {
+              "ownKey": "protobuf",
+              "ownPages": [{
+                "reference": {
+                  "path": "kotlindoc/protobuf",
+                  "baseUrl": "https://strikt.io",
+                  "fileName": "strikt/protobuf",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://strikt.io/kotlindoc/protobuf/strikt/protobuf"
+                },
+                "description": "",
+                "title": "strikt.protobuf",
+                "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+              }]
+            }}
+          }}
+        },
+        "jackson": {
+          "ownKey": "jackson",
+          "childrenPages": {"strikt": {
+            "ownKey": "strikt",
+            "childrenPages": {"jackson": {
+              "ownKey": "jackson",
+              "ownPages": [{
+                "reference": {
+                  "path": "kotlindoc/jackson",
+                  "baseUrl": "https://strikt.io",
+                  "fileName": "strikt/jackson",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://strikt.io/kotlindoc/jackson/strikt/jackson"
+                },
+                "description": "",
+                "title": "strikt.jackson",
+                "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+              }]
+            }}
+          }}
+        },
+        "java": {
+          "ownKey": "java",
+          "childrenPages": {"strikt": {
+            "ownKey": "strikt",
+            "childrenPages": {"time": {
+              "ownKey": "time",
+              "ownPages": [{
+                "reference": {
+                  "path": "kotlindoc/java",
+                  "baseUrl": "https://strikt.io",
+                  "fileName": "strikt/time",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://strikt.io/kotlindoc/java/strikt/time"
+                },
+                "description": "",
+                "title": "strikt.time",
+                "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+              }]
+            }}
+          }}
+        },
+        "arrow": {
+          "ownKey": "arrow",
+          "childrenPages": {"strikt": {
+            "ownKey": "strikt",
+            "childrenPages": {"arrow": {
+              "ownKey": "arrow",
+              "ownPages": [{
+                "reference": {
+                  "path": "kotlindoc/arrow",
+                  "baseUrl": "https://strikt.io",
+                  "fileName": "strikt/arrow",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://strikt.io/kotlindoc/arrow/strikt/arrow"
+                },
+                "description": "",
+                "title": "strikt.arrow",
+                "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+              }]
+            }}
+          }}
+        }
+      }
+    },
+    "modules": {
+      "ownKey": "modules",
+      "childrenPages": {
+        "gradle": {
+          "ownKey": "gradle",
+          "ownPages": [{
+            "reference": {
+              "path": "modules",
+              "baseUrl": "https://strikt.io",
+              "fileName": "gradle",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://strikt.io/modules/gradle"
+            },
+            "description": "",
+            "title": "Gradle Module",
+            "content": "<h2 id=\"gradle\"><a href=\"#gradle\" id=\"gradle\" class=\"anchor\"><\/a><a href=\"https://strikt.io/modules/gradle\">Gradle<\/a><\/h2>\n<p>Extensions for assertions and traversals on <a href=\"https://github.com/gradle/gradle\">Gradle<\/a>'s test kit.<\/p>\n<p>Add the following to your dependencies:<\/p>\n<pre><code class=\"language-kotlin\">testImplementation(&quot;io.strikt:strikt-gradle:0.23.7&quot;)\n<\/code><\/pre>\n"
+          }]
+        },
+        "spring": {
+          "ownKey": "spring",
+          "ownPages": [{
+            "reference": {
+              "path": "modules",
+              "baseUrl": "https://strikt.io",
+              "fileName": "spring",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://strikt.io/modules/spring"
+            },
+            "description": "",
+            "title": "Spring Module",
+            "content": "<h2 id=\"spring\"><a href=\"#spring\" id=\"spring\" class=\"anchor\"><\/a><a href=\"https://strikt.io/modules/spring\">Spring<\/a><\/h2>\n<p>Extensions for testing code that uses the Spring Framework.<\/p>\n<p>Add the following to your dependencies:<\/p>\n<pre><code class=\"language-kotlin\">testImplementation(&quot;io.strikt:strikt-spring:0.23.7&quot;)\n<\/code><\/pre>\n"
+          }]
+        },
+        "core": {
+          "ownKey": "core",
+          "ownPages": [{
+            "reference": {
+              "path": "modules",
+              "baseUrl": "https://strikt.io",
+              "fileName": "core",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://strikt.io/modules/core"
+            },
+            "description": "",
+            "title": "Core API",
+            "content": "<h1 id=\"strikt\"><a href=\"#strikt\" id=\"strikt\" class=\"anchor\"><\/a>Strikt<\/h1>\n<p>Strikt is an assertion library for Kotlin intended for use with a test runner such as <a href=\"https://junit.org/junit5/\">JUnit<\/a>, <a href=\"http://spekframework.org/\">Spek<\/a>, or <a href=\"https://github.com/kotlintest/kotlintest\">KotlinTest<\/a><\/p>\n<p>Strikt is under development, but 100% usable.\nThe API may change until a <a href=\"https://github.com/robfletcher/strikt/milestone/1\">version 1.0<\/a> is released.\nAny suggestions, <a href=\"https://github.com/robfletcher/strikt/issues\">issue reports<\/a>, <a href=\"https://github.com/robfletcher/strikt/pulls\">contributions<\/a>, or feedback are very welcome.<\/p>\n<h2 id=\"installation\"><a href=\"#installation\" id=\"installation\" class=\"anchor\"><\/a>Installation<\/h2>\n<p>Strikt is available from JCenter.<\/p>\n<pre><code class=\"language-kotlin\">repositories {\n  jcenter()\n}\n\ndependencies {\n  testImplementation(&quot;io.strikt:strikt-core:&lt;version&gt;&quot;)\n}\n<\/code><\/pre>\n<p>See the button below or <a href=\"https://github.com/robfletcher/strikt/releases/latest\">releases/latest<\/a> for the current version number.<\/p>\n<h2 id=\"additional-libraries\"><a href=\"#additional-libraries\" id=\"additional-libraries\" class=\"anchor\"><\/a>Additional Libraries<\/h2>\n<p>Strikt has the following additional libraries:<\/p>\n<ul>\n<li><code>strikt-arrow<\/code> -- supports data types from the <a href=\"https://arrow-kt.io/\">Arrow<\/a> functional programming library.<\/li>\n<li><code>strikt-gradle<\/code> -- supports the Gradle build tool.<\/li>\n<li><code>strikt-jackson<\/code> -- supports the Jackson JSON library.<\/li>\n<li><code>strikt-java-time<\/code> -- supports the JSR-310 <code>java.time<\/code> package.<\/li>\n<li><code>strikt-protobuf<\/code> -- supports Protobuf / gRPC.<\/li>\n<li><code>strikt-spring<\/code> -- supports the Spring Framework.<\/li>\n<\/ul>\n<p>Versions are synchronized with the core Strikt library.<\/p>\n<p>To install additional libraries include dependencies in your Gradle build.\nFor example:<\/p>\n<pre><code class=\"language-kotlin\">dependencies {\n  testImplementation(&quot;io.strikt:strikt-java-time:&lt;version&gt;&quot;)\n}\n<\/code><\/pre>\n<h2 id=\"bill-of-materials\"><a href=\"#bill-of-materials\" id=\"bill-of-materials\" class=\"anchor\"><\/a>Bill of Materials<\/h2>\n<p>Strikt supplies a BOM that is useful for aligning versions when using more than one Strikt module.<\/p>\n<pre><code class=\"language-kotlin\">dependencies {\n  // BOM dependency\n  testImplementation(platform(&quot;io.strikt:strikt-bom:&lt;version&gt;&quot;))\n\n  // Versions can be omitted as they are supplied by the BOM\n  testImplementation(&quot;io.strikt:strikt-jackson&quot;)\n  testImplementation(&quot;io.strikt:strikt-java-time&quot;)\n  testImplementation(&quot;io.strikt:strikt-spring&quot;)\n}\n<\/code><\/pre>\n<h2 id=\"using-strikt\"><a href=\"#using-strikt\" id=\"using-strikt\" class=\"anchor\"><\/a>Using Strikt<\/h2>\n<p>Please see the <a href=\"https://strikt.io/\">project documentation<\/a> and <a href=\"https://strikt.io/api/strikt-core\">API docs<\/a>.<\/p>\n<h2 id=\"community\"><a href=\"#community\" id=\"community\" class=\"anchor\"><\/a>Community<\/h2>\n<p>Join the <a href=\"https://kotlinlang.slack.com/messages/CAR7KJ96J\"><strong>#strikt<\/strong><\/a> channel on the Kotlin Slack.<\/p>\n<p>Follow <a href=\"https://twitter.com/stri_kt\"><strong>@stri_kt<\/strong><\/a> on Twitter for updates and release notifications.<\/p>\n<p><a href=\"https://bintray.com/robfletcher/maven/strikt-core\"><img src=\"https://img.shields.io/badge/dynamic/json.svg?label=latest%20release&amp;url=https%3A%2F%2Fapi.bintray.com%2F%2Fpackages%2Frobfletcher%2Fmaven%2Fstrikt-core%2Fversions%2F_latest&amp;query=name&amp;colorB=0094cd&amp;style=for-the-badge\" alt=\"Bintray\" /><\/a>\n<a href=\"https://github.com/robfletcher/strikt/\"><img src=\"https://img.shields.io/github/release-date/robfletcher/strikt.svg?style=for-the-badge\" alt=\"GitHub Release Date\" /><\/a>\n<a href=\"https://www.apache.org/licenses/LICENSE-2.0.html\"><img src=\"https://img.shields.io/github/license/robfletcher/strikt.svg?style=for-the-badge&amp;logo=Apache\" alt=\"license\" /><\/a>\n<a href=\"https://github.com/robfletcher/strikt/issues\"><img src=\"https://img.shields.io/github/issues/robfletcher/strikt.svg?style=for-the-badge&amp;logo=Github\" alt=\"GitHub issues\" /><\/a>\n<img src=\"https://img.shields.io/github/workflow/status/robfletcher/strikt/CI/master?style=for-the-badge\" alt=\"GitHub Workflow Status (branch)\" />\n<img src=\"https://img.shields.io/github/languages/top/robfletcher/strikt.svg?style=for-the-badge&amp;logo=Kotlin&amp;logoColor=white\" alt=\"GitHub top language\" />\n<a href=\"https://twitter.com/stri_kt\"><img src=\"https://img.shields.io/twitter/follow/stri_kt.svg?style=for-the-badge&amp;label=Twitter&amp;logo=Twitter&amp;logoColor=white\" alt=\"Twitter Follow\" /><\/a><\/p>\n"
+          }]
+        },
+        "bom": {
+          "ownKey": "bom",
+          "ownPages": [{
+            "reference": {
+              "path": "modules",
+              "baseUrl": "https://strikt.io",
+              "fileName": "bom",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://strikt.io/modules/bom"
+            },
+            "description": "",
+            "title": "Bill of Materials",
+            "content": "<h2 id=\"using-the-bill-of-materials-bom\"><a href=\"#using-the-bill-of-materials-bom\" id=\"using-the-bill-of-materials-bom\" class=\"anchor\"><\/a><a href=\"https://strikt.io/modules/bom\">Using the Bill of Materials (BOM)<\/a><\/h2>\n<p>If you're using multiple Strikt modules (and Gradle &gt;= 5.0) you can import Strikt's BOM and then omit versions for individual modules.\nFor example:<\/p>\n<pre><code class=\"language-kotlin\">dependencies {\n  testImplementation(platform(&quot;io.strikt:strikt-bom:0.23.7&quot;))\n  testImplementation(&quot;io.strikt:strikt-arrow&quot;)\n  testImplementation(&quot;io.strikt:strikt-jackson&quot;)\n  testImplementation(&quot;io.strikt:strikt-java-time&quot;)\n}\n<\/code><\/pre>\n"
+          }]
+        },
+        "protobuf": {
+          "ownKey": "protobuf",
+          "ownPages": [{
+            "reference": {
+              "path": "modules",
+              "baseUrl": "https://strikt.io",
+              "fileName": "protobuf",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://strikt.io/modules/protobuf"
+            },
+            "description": "",
+            "title": "Protobuf Module",
+            "content": "<h2 id=\"protobuf\"><a href=\"#protobuf\" id=\"protobuf\" class=\"anchor\"><\/a><a href=\"https://strikt.io/modules/protobuf\">Protobuf<\/a><\/h2>\n<p>Extensions for testing code that uses Protobuf / gRPC.<\/p>\n<p>Add the following to your dependencies:<\/p>\n<pre><code class=\"language-kotlin\">testImplementation(&quot;io.strikt:strikt-protobuf:0.23.7&quot;)\n<\/code><\/pre>\n"
+          }]
+        },
+        "jackson": {
+          "ownKey": "jackson",
+          "ownPages": [{
+            "reference": {
+              "path": "modules",
+              "baseUrl": "https://strikt.io",
+              "fileName": "jackson",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://strikt.io/modules/jackson"
+            },
+            "description": "",
+            "title": "Jackson Module",
+            "content": "<h2 id=\"jackson\"><a href=\"#jackson\" id=\"jackson\" class=\"anchor\"><\/a><a href=\"https://strikt.io/modules/jackson\">Jackson<\/a><\/h2>\n<p>Extensions for assertions and traversals on types <a href=\"https://github.com/FasterXML/jackson\">Jackson<\/a>'s <code>JsonNode<\/code> and sub-types.<\/p>\n<p>Add the following to your dependencies:<\/p>\n<pre><code class=\"language-kotlin\">testImplementation(&quot;io.strikt:strikt-jackson:0.23.7&quot;)\n<\/code><\/pre>\n"
+          }]
+        },
+        "java": {
+          "ownKey": "java",
+          "ownPages": [{
+            "reference": {
+              "path": "modules",
+              "baseUrl": "https://strikt.io",
+              "fileName": "java",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://strikt.io/modules/java"
+            },
+            "description": "",
+            "title": "Java Module",
+            "content": "<h2 id=\"java-time\"><a href=\"#java-time\" id=\"java-time\" class=\"anchor\"><\/a><a href=\"https://strikt.io/modules/java\">Java Time<\/a><\/h2>\n<p>Extensions for assertions and traversals on types from the <code>java.time<\/code> package.<\/p>\n<p>Add the following to your dependencies:<\/p>\n<pre><code class=\"language-kotlin\">testImplementation(&quot;io.strikt:strikt-java-time:0.23.7&quot;)\n<\/code><\/pre>\n"
+          }]
+        },
+        "arrow": {
+          "ownKey": "arrow",
+          "ownPages": [{
+            "reference": {
+              "path": "modules",
+              "baseUrl": "https://strikt.io",
+              "fileName": "arrow",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://strikt.io/modules/arrow"
+            },
+            "description": "",
+            "title": "Arrow Module",
+            "content": "<h2 id=\"arrow\"><a href=\"#arrow\" id=\"arrow\" class=\"anchor\"><\/a><a href=\"https://strikt.io/modules/arrow\">Arrow<\/a><\/h2>\n<p>Extensions for assertions and traversals on types from the <a href=\"https://arrow-kt.io/\">Arrow<\/a>'s functional programming library.<\/p>\n<p>Add the following to your dependencies:<\/p>\n<pre><code class=\"language-kotlin\">testImplementation(&quot;io.strikt:strikt-arrow:0.23.7&quot;)\n<\/code><\/pre>\n"
+          }]
+        }
+      }
+    }
+  }
+}
